@@ -14,14 +14,14 @@
 
         const PI = 3.14;
         
-        let C = prompt("Введите длину окружности");
-        let R = C / 2 * PI;
+        let C = +prompt("Введите длину окружности");
+        let R = (C / 2) * PI;
         let sRound = PI * R**2;
-        let sideSquare = sRound / 4;
+        let squareSide = Math.sqrt(sRound);
 
-        console.log("Радиус окружности:", R);
-        console.log("Площадь круга, ограниченного окружностью:", sRound);
-        console.log("Сторона квадрата, площадь которого равна найденной площади круга:", sideSquare);
+        console.log("Радиус окружности:", R.toFixed(3));
+        console.log("Площадь круга, ограниченного окружностью:", sRound.toFixed(3));
+        console.log("Сторона квадрата, площадь которого равна найденной площади круга:", squareSide.toFixed(3));
     </script>
     </body>
 </html>
